@@ -1,0 +1,76 @@
+body {
+	background-image:url("praia.jpg");
+
+	background-attachment: fixed; /* Se mexe por cima da imagem */
+
+	/*
+
+	Se a imagem for pequena e se repetir, usa-se: 
+
+	backgound-repeat: repeat-x; -> só mantém as imagens na horizontal
+	backgound-repeat: repeat-y; -> só mantém as imagens na vertical
+	backgound-repeat: no-repeat;
+
+	backgound-size: contain; -> diminui o tamanho
+	backgound-size: cover; -> se estendeu para a tela inteira
+
+	backgound-size: 100%;
+
+	*/
+
+	color: white; /* o ideal é ser em código hexadecimal */
+	font-size: 40px;
+}
+
+header{
+	border-bottom: 2px solid white;
+	height: 50vh;
+
+	/* 
+
+	vh / vw -> se adapta conforme o dispositivo (dar preferência)
+
+	*/
+
+}
+
+section{
+	border-bottom: 2px solid lightgray;
+	height: 50vh;
+
+}
+
+footer{
+	border-bottom: 2px solid darkgray;
+	height: 50vh;
+
+}
+
+.galeria {
+	display: flex;
+}
+
+.item {
+
+	border: 2px dotted lightyellow;
+	width: 33vw;
+	height: 49.5vh;
+
+
+}
+
+.img1 {
+	background-image:url("imgUm.jfif");
+	backgound-size: cover;
+}
+
+.img2 {
+	background-image:url("imgDois.jfif");
+	backgound-size: cover;
+	}
+
+.img3 {
+	background-image:url("imgTres.jfif");
+	backgound-size: cover;
+
+}

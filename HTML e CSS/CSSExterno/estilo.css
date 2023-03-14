@@ -1,0 +1,87 @@
+/* Importação da fonte baixada */
+@font-face{
+			font-family:KolkerBrush-Regular;
+			src: url(KolkerBrush-Regular.ttf);
+		}
+@font-face{
+			font-family:RubikBubbles-Regular;
+			src: url(RubikBubbles-Regular.ttf);
+		}
+
+#square {
+	width: auto; /* largura  */
+	height: auto; /* altura  */
+	border-style: dotted; /* estilo da borda: solid, etc  */
+	border-width: 2px; /* largura da borda */
+	border-color: purple; /* cor da borda */
+
+	background-color: lavender; /* cor de fundo */
+
+/*          top  rigth bottom left */
+	margin: 100px 150px 10px 180px;
+
+/* margin com um valor atribui um único valor igual para todos */
+/* margin-right controla a margem da direita */
+/* margin-left controla a margem  da esquerda*/
+/* margin-top controla a margem entre a figura e o elemento acima */ 
+/* margin-bottom controla a margem entre a figura e o elemento abaixo*/
+
+	padding-top: 50px;
+	padding-left: 550px;
+	padding-right: 550px;
+	padding-bottom: 50px;
+
+/* padding: 100px; -> todos os valores de uma vez */
+/* padding: 40px 60px 30px 40px */
+
+text-align: center;
+
+	font-family: RubikBubbles-Regular;
+
+}
+
+#circle {
+	width: 200px;
+	height: 200px;
+
+	border: solid 7px plum;
+	border-radius: 170px;
+
+	text-align: center;
+
+	/* Aplicando a fonte baixada */
+	font-family: KolkerBrush-Regular;
+	font-size: 90px;
+}
+
+#rectangle {
+	width: 400px; 
+	height: 300px; 
+
+	border: solid 7px hotpink; 
+	border-radius: 50px;
+
+	margin: auto; /* Centralizado na tela do computador */
+
+	text-align: center; /* horizontal */
+	line-height: 290px; /* vertical */
+
+}
+
+#banner {
+	border: solid 7px darkblue;
+
+	width: 400px; 
+	height: 300px;
+	margin: 100px;
+
+	text-align: center;
+	background-color: lightblue;
+
+	display: flex;
+	justify-content: center;
+}
+
+#titulo {
+	align-self: center;
+}

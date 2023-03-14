@@ -1,0 +1,50 @@
+nav > ul > li {
+	background-color: lavender;
+	margin:5px;
+	width: 15vw;     
+	height: 5vh;
+	list-style: none;
+
+	font-size: 20px;
+
+	float:left; /* Faz os elementos flutuarem à esquerda */
+	text-align: center;
+
+	border: 2px solid purple;
+}
+
+nav > ul > li{
+	transition: 2s;
+	display: table;
+}
+nav > ul > li:hover{
+	background-color: lavender;
+}
+nav > ul > li > a{
+	text-decoration: none;
+	transition: 2s;
+}
+nav > ul > li:hover{
+
+	font-size: 22px;
+	background-color: pink;
+}
+nav > ul > li > a:visited{
+	color:purple
+}
+nav > ul > li > a:active{
+	color:purple;
+}
+
+
+.clearfix{
+  clear:left;
+}
+
+
+
+/*nav > a{
+	margin: 5px;
+	background-color: #636e72;
+	color: #f5f6fa;
+}*/

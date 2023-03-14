@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title> Formulário </title>
+			<style type="text/css">
+		div {
+			background-color: #lavender;
+		}
+		body {
+			background-color: #D8BFD8;
+			color: #990099;
+		}
+		fieldset {
+			background-color: #E6E6FA;
+		}
+
+		legend {
+			background-color: #DDA0DD;
+			color: white;
+			padding: 5px 10px;
+		}
+
+		input {
+			margin: 5px;
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<h2> Formulário </h2>
+	</header>
+	<section>
+		<form action="/action_page.php" target="_blank" method="post">
+			<fieldset>
+			<legend> Informações:</legend>
+			<div>
+			<label for="fname"> <b> Primeiro nome: </b> </label><br>
+			<input type="text" id="fname" name="fname" placeholder="Nome" style="color:#990099"><br>
+			</div>
+
+			<div>
+			<label for="lname"> <b> Sobrenome: </b> </label><br>
+			<input type="text" id="lname" name="lname" placeholder="Sobrenome" style="color:#990099"><br><br>
+			</div>
+
+			<div>
+			<label for="senha"> <b> Informe sua senha: </b> </label>
+			<input type="password" id="senha" name="senha" style="color:#990099">
+			</div>
+		</form>
+		<br>
+		<form>
+			<div>
+			<label for="sexo">  <b> Escolha seu sexo:  </b> </label>
+			<select id="sexo" name="sexo">
+			<option value="feminino" style="color:#990099"> Feminino </option>
+			<option value="masculino" style="color:#990099"> Masculino </option>
+			<option value="não-binário" style="color:#990099"> Não-binário </option>
+			<option value="outro" style="color:#990099"> Outro </option>
+			<option value="prefiro não dizer" style="color:#990099"> Prefiro não dizer </option>
+			</select>
+		</div>
+		</form>
+		<br>
+		<br>
+		<form action="/action_page.php"  style="color:#990099;">
+			<div>
+			<label for="birthday"> <b> Data do seu aniversário: </b> </label>
+			<p><input type="date" id="birthday" name="birthday"  style="color:#990099;"></form></p>
+		</div>
+		</form>
+		<form>
+			<div>
+			<p> <b> Qual seu ano e curso? </b> </p>
+
+			Primeiro: <input type="checkbox" name="ano" value="primeiro">
+			<br>
+			Segundo: <input type="checkbox" name="ano" value="segundo">
+			<br>
+			Terceiro: <input type="checkbox" name="ano" value="terceiro">
+			<br>
+			Administração: <input type="checkbox" name="curso" value="administração">
+			<br>
+			Enfermagem: <input type="checkbox" name="curso" value="enfermagem">
+			<br>
+			Informática: <input type="checkbox" name="curso" value="informática">
+			<br>
+			</div>
+		</form>
+		<br>
+		<form>
+			<div>
+			<label for="meses"> <b> Selecione o mês desejado: </b> </label>
+			<input type="month" id="meses" name="meses" style="color:#990099">
+			</div>
+		</form>
+
+		<form>
+			<div>
+			<p> <b> Escolha sua matéria da base técnica de informática favorita:  </b> </p>
+			<input type="radio" id="html" name="fav_language" value="HTML">
+			<label for="html"> HTML </label> <br>
+			<input type="radio" id="arquitetura" name="fav_language" value="Arquitetura e Manutenção">
+			<label for="css"> Arquitetura e Manutenção de Computadores </label> <br>
+			<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+			<label for="javascript"> Lógica de Programação </label> <br>
+			<input type="radio" id="planeja" name="fav_language" value="Planejamento de Carreira">
+			<label for="planejamentodecarreira"> Planejamento de Carreira </label>
+			</div>
+		</form>
+		<br>
+		<form action="/action_page.php">
+			<div>
+			<label for="quantity"> <b> Quantos irmãos você tem? </b> </label>
+			<input type="number" id="quantity" name="quantity" min="0" max="10"  style="color:#990099;">
+		</form>
+		<br>
+		<br>
+		<form>
+			<div>
+			<label for="favcolor"> <b> Selecione sua cor Favorita: </b> </label>
+			<p><input type="color" id="favcolor" name="favcolor" value="#990099"></p>
+			</div>
+		</form>
+		<br>
+		<form action="/action_page.php">
+			<div>
+			<label for="email"> <b> Digite o seu Email: </b> </label>
+			<input type="email" id="email" name="email" multiple style="color:#990099;" placeholder="nome123@gmail.com">
+			</div>
+		</form>
+		<br>
+		<form action="/action_page.php">
+			<div>
+			<label for="phone"> <b> Insira um número de telefone: </b> </label>
+			<p><input type="tel" id="phone" name="phone" placeholder="(88) 9 97230775" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required style="color:#990099;" > </p>
+			</div>
+		</form>
+		<form>
+			<div>
+			<label for="arquivo"> <b> Selecione um arquivo: </b> </label>
+			</div>
+			<div>
+			<input type="file" id="arquivo" name="arquivo" multiple>
+			</div>
+		</form>
+	<br>
+		<form>
+			<div>
+			<label for="escala"> <b> Seu nível de satisfação (Mínimo -50 e Máximo 50) </b> </label>
+			<input type="range" name="escala" min="-50" step="2" max="50" value="0">
+			</div>
+		</form>
+
+	<p> <b> Calculadora </b> </p>
+		<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)" style="color:#990099"> 0
+			<input type="range" id="a" name="a" value="50" style="color:#990099"> 100 +
+			<input type="number" id="b" name="b" value="50" style="color:#990099"> =
+			<output name="x" for="a b"> </output>
+			<br><br>
+		</form>
+	<br>
+		<form>
+			<div>
+			<label for="urlComBr" > <b> Informe um endereço com a extensão .com.br: </b> </label>
+			<input type="url" name="urlComBr" style="color:#990099" id="urlComBr" placeholder="http://endereco.com.br" pattern=".+\.com.br" required>
+			</div>
+		</form>
+	<br>
+		<form id="formPesquisa">
+			<div>
+			<label for="pesquisa"> <b> Informe o que deseja pesquisar: </b> </label>
+			</div>
+			<div>
+			<input type="search" id="pesquisa" name="q" placeholder="Buscar no site..." style="color:#990099">
+			<input type="submit" name="Buscar">
+			</div>
+		</form>
+		<p id="resultado"> </p>
+		<script>
+		document.getElementById("formPesquisa").onsubmit = function () {
+		let formPesquisa = document.getElementById("formPesquisa").elements;
+		document.getElementById("resultado").innerHTML = "Você pesquisou por: " + 
+		formPesquisa['pesquisa'].value;
+		return false;
+		};
+		</script>
+	<br>
+		<form>
+			<div>
+			<label for="horario"> <b> Selecione a hora: </b> </label>
+			<input id="horario" type="time" name="horario" value="9:35" style="color:#990099">
+			</div>
+		</form>
+	<br>
+		<form id="formHidden">
+			<div>
+			<input type="hidden" id="produtoId" name="produtoId" value="10">
+			<label for="produto"> <b> Informe o nome do produto: </b> </label>
+			<input type="text" id="produto" name="produto" style="color:#990099">
+			</div>
+		</form>
+		<p id="result">  </p>
+		<script>
+		document.getElementById("formHidden").onsubmit = function () {
+		let formHidden = document.getElementById("formHidden").elements;
+		document.getElementById("result").innerHTML = "produtoId (campo Hidden): " + 
+		formHidden['produtoId'].value + "<br /" + "Nome do produto: " + formHidden['produtoId'].value;
+		return false;
+		</script>
+	<br>
+		<form id="frmImage">
+			<div>
+			<label for="cpf"> <b> Informe o seu CPF </b> </label>
+			<input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" style="color:#990099">
+			</div>
+			<div>
+			<input type="image" src="submit.png" height="40" width="150" alt="Submit">
+			</div>
+		</form>
+		<p id="resultado"></p>
+		<script>
+		document.getElementById("frmImage").onsubmit = function () {
+		let frmImg = document.getElementById('frmImage').elements;
+		</script>
+	<br>
+		<form>
+			<div>
+			<label for="data"> <b> Selecione uma data e hora: </b> </label>
+			<input type="datetime-local" id="data" name="data" style="color:#990099">
+			</div>
+		</form>
+	<br>
+		<form>
+			<div>
+			<textarea style="color:#990099"> Dê sugestões. </textarea>
+			</div>
+		</form>
+	<br>
+		<form>
+			<div>
+			<input type="reset" value="Limpar Formulário">
+			</div>
+		</form>
+	<br>
+		<form>
+			<div>
+			<button type="button" onclick="alert('Formulário enviado com sucesso')"> Enviar </button>
+			</div>
+		</form>
+
+	</fieldset>
+	</form>
+	</section>
+	<footer>		
+	</footer>
+</body>
+</html>
